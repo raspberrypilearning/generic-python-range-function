@@ -1,19 +1,54 @@
-## Introduction
+- The Python range function can be used to produce a sequence of numbers, similar to a tuple.
 
-Add project description here. What will learners be making?
+- For instance, you could use the range function to produce a sequence of the numbers from 0 up to and including 9, like this.
 
-### What you will make
+```python
+>>> r = range(10)
+```
 
-Add something here to showcase here, for example:
+- Just like a normal sequence you could then have a look at the numbers inside the new `r` object.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+```python
+>>> r[0]
+0
+>>> r[9]
+9
+>>> 6 in r
+True
+>>> 10 in r
+False
+```
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+- The range function can take up to three arguments.
+- When one argument is provided, the sequence will be from `0` up to the value of the argument.
+```python
+>>> r = range(10)
+>>> list(r)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+- When two arguments are provided, the sequence will be between the first value and the second value.
+```python
+>>> r = range(5, 10)
+>>> list(r)
+[5, 6, 7, 8, 9]
+```
+- When three arguments are provided, the sequence will be between the first and second value, but in steps equal to the third value.
+```python
+>>> r = range(0, 10, 2)
+>>> list(r)
+[0, 2, 4, 6, 8]
+```
+- Negative values can also be supplied for any of the arguments.
+```python
+>>> r = range(-5, -20, -3)
+>>> list(r)
+[-5, -8, -11, -14, -17]
+```
 
-### What you will learn
+- As with any sequence in Python, you can use a `for` loop to iterate over the sequence.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+```python
+for i in range(10):
+    print(i)
+```
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
