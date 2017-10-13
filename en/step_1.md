@@ -1,12 +1,12 @@
-- The Python range function can be used to produce a sequence of numbers, similar to a tuple.
+- The Python `range` function can be used to produce a sequence of numbers similar to a tuple.
 
-- For instance, you could use the range function to produce a sequence of the numbers from 0 up to and including 9, like this.
+- For instance, you can use the `range` function to produce a sequence of the numbers from `0` up to and including `9`, like this:
 
 ```python
 >>> r = range(10)
 ```
 
-- Just like a normal sequence you could then have a look at the numbers inside the new `r` object.
+- As with any sequence in Python, you can then have a look at the numbers inside the new `r` object.
 
 ```python
 >>> r[0]
@@ -19,8 +19,8 @@ True
 False
 ```
 
-- The range function can take up to three arguments.
-- When one argument is provided, the sequence will be from `0` up to the value of the argument.
+- The `range` function can take up to three arguments.
+- When one argument is provided, the sequence will be include all integers from `0` up to the value of the argument.
 ```python
 >>> r = range(10)
 >>> list(r)
@@ -45,7 +45,7 @@ False
 [-5, -8, -11, -14, -17]
 ```
 
-- As with any sequence in Python, you can use a `for` loop to iterate over the sequence.
+- As with any sequence in Python, you can use a for loop to iterate over the sequence.
 
 ```python
 for i in range(10):
